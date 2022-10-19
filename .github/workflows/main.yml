@@ -13,10 +13,11 @@ jobs:
           mv * /home/runner/ocr
       - name: "设置虚拟环境"
         run: |
-          export PATH="/usr/share/miniconda/bin:$PATH"
           conda create -n chineseocr python=3.6 pip scipy
+          export PATH="/usr/share/miniconda/bin:$PATH"
       - name: "编译Darknet"
         run: |
+          export PATH="/usr/share/miniconda/bin:$PATH"
           source activate chineseocr
           cd /home/runner/ocr
           git clone https://github.com/LemonFan-maker/Only-for-Action.git
@@ -24,7 +25,8 @@ jobs:
           cd darknet && make && cd ..
       - name: "安装依赖"
         run: |
-          conda activate chineseocr
+          export PATH="/usr/share/miniconda/bin:$PATH"
+          source activate chineseocr
           pip uninstall numpy
           pip install easydict opencv-contrib-python==4.0.0.21 Cython h5py==2.10.0 lmdb numpy==1.16 mahotas pandas requests bs4 matplotlib lxml
           pip install -U pillow
