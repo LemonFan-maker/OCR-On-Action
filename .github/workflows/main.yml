@@ -14,10 +14,6 @@ jobs:
       - name: "安装内网穿透服务"
         run: |
           cd /home/runner/tunnel
-          release="wget -qO- -t1 -T2 "https://api.github.com/repos/cloudflare/cloudflared/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/"\"//g;s/,//g;s/ //g'
-          wget https://github.com/cloudflare/cloudflared/releases/download/$release/cloudflared-linux-amd64.deb
-          
-          
-          
-          
+          wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+          sudo dpkg -i cloudflared-linux-amd64.deb
           
