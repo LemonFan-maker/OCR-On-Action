@@ -17,14 +17,15 @@ jobs:
           conda create -n chineseocr python=3.6 pip scipy
       - name: "编译Darknet"
         run: |
-          source activate chineseocr
+          conda activate chineseocr
           cd /home/runner/ocr
           git clone https://github.com/LemonFan-maker/Only-for-Action.git
           mv Only-for-Action darknet
           cd darknet && make && cd ..
       - name: "安装依赖"
         run: |
-          source activate chineseocr
+          conda activate chineseocr
+          pip uninstall numpy
           pip install easydict opencv-contrib-python==4.0.0.21 Cython h5py==2.10.0 lmdb numpy==1.16 mahotas pandas requests bs4 matplotlib lxml
           pip install -U pillow
           pip install web.py==0.40.dev0 redis
