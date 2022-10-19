@@ -11,31 +11,10 @@ jobs:
           mkdir /home/runner/ocr
           mkdir /home/runner/tunnel
           mv * /home/runner/ocr
-      - name: "设置虚拟环境"
-        run: |
-          sudo rm -rf /usr/bin/conda
-          export PATH="/usr/share/miniconda/bin:$PATH"
-          conda create -n chineseocr python=3.6 pip scipy
-      - name: "安装依赖"
-        run: |
-          export PATH="/usr/share/miniconda/bin:$PATH"
-          source activate chineseocr
-          pip uninstall numpy -y
-          pip install easydict opencv-contrib-python==4.0.0.21 Cython h5py==2.10.0 lmdb numpy==1.16 mahotas pandas requests bs4 matplotlib lxml
-          pip install -U pillow
-          pip install web.py==0.40.dev0 redis
-          pip install keras==2.1.5 tensorflow==1.8
-          conda install pytorch-cpu torchvision-cpu -c pytorch
-      - name: "准备models"
-        run: |
-          cd /home/runner/ocr
-          wget https://github.com/LemonFan-maker/Download-Models/releases/download/model/models.zip
-          unzip models.zip -d .
-          rm -rf models.zip
       - name: "安装内网穿透服务"
         run: |
           cd /home/runner/tunnel
-          release = wget -qO- -t1 -T2 "https://api.github.com/repos/cloudflare/cloudflared/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g'
+          release="wget -qO- -t1 -T2 "https://api.github.com/repos/cloudflare/cloudflared/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/"\"//g;s/,//g;s/ //g'
           wget https://github.com/cloudflare/cloudflared/releases/download/$release/cloudflared-linux-amd64.deb
           
           
