@@ -23,6 +23,7 @@
   家用**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
 
   ## 三、原理
+  [OCR-On-Action](./assets/OCR-On-Action.svg)
 
   
 
