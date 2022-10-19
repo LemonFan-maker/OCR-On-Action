@@ -13,7 +13,6 @@ jobs:
           mv * /home/runner/ocr
       - name: "设置虚拟环境"
         run: |
-          sudo rm -rf /usr/bin/conda
           export PATH="/usr/share/miniconda3/bin:$PATH"
           conda create -n chineseocr python=3.6 pip scipy
       - name: "编译Darknet"
