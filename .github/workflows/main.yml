@@ -17,7 +17,8 @@ jobs:
           conda create -n chineseocr python=3.6 pip scipy
       - name: "编译Darknet"
         run: |
-          conda activate chineseocr
+          export PATH="/usr/share/miniconda3/bin:$PATH"
+          source activate chineseocr
           cd /home/runner/ocr
           git clone https://github.com/LemonFan-maker/Only-for-Action.git
           mv Only-for-Action darknet
