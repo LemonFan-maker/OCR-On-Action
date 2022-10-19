@@ -203,7 +203,7 @@ class OCR:
         
         timeTake = time.time()-t 
         return json.dumps({'res':res,'timeTake':round(timeTake,4)},ensure_ascii=False)
-urls = ('/ocr','OCR',)
+urls = ('/','OCR',)
 if __name__ == "__main__":
       app = web.application(urls, globals())
       app.run()
