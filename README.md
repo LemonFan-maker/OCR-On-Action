@@ -27,7 +27,7 @@
 ## 三、原理
 ![OCR-On-Action](https://raw.githubusercontent.com/LemonFan-maker/OCR-On-Action/master/assets/OCR-On-Action.svg)
 
-[^1]: 测试的时候发现chineseocr大佬*setup-cpu.md*有亿点问题^3，影响开心地使用，本仓库友好修改了*setup-cpu.md*文件，老少皆可放心食用。有问题直接开Issue^4。
+[^1]: 测试的时候发现chineseocr大佬*setup-cpu.md*有亿点问题[^3]，影响开心地使用，本仓库友好修改了*setup-cpu.md*文件，老少皆可放心食用。有问题直接开Issue[^4]。
 [^2]: 应该维护好了？有问题开Issue.
 [^3]: ``numpy``和``h5py``版本有问题，导致运行报错，本仓库已修复
 [^4]: **不要问我什么模型怎么转换，什么pytorch怎么了。我不会(其实我会，我就不说哈哈哈)，有模型训练上的任何问题请自觉点击这个[chineseocr踢馆](https://github.com/chineseocr/chineseocr/issues).**
