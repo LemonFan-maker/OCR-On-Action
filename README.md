@@ -16,11 +16,13 @@
 
   *fork*本仓库，直接*Action*运行
 
-  **注意:**准备时间长是正常现象。
-
   **提示:**如果要采用接口，请切换*branch*到**API**
 
   家用**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
+  
+   **注意1:**准备时间长是正常现象。
+   
+    **注意2:** *API*分支正在维护中
 
   ## 三、原理
   ![OCR-On-Action](https://raw.githubusercontent.com/LemonFan-maker/OCR-On-Action/master/assets/OCR-On-Action.svg)
