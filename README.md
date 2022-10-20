@@ -18,7 +18,7 @@ gofile地址:http://gofile.me/4Nlqh/uT32hAjbx   密码 https://github.com/chines
 - [ ]  CPU版本加速    
 - [ ]  支持基于用户字典OCR识别    
 - [ ]  新增语言模型修正OCR识别结果  
-- [ ]  支持树莓派实时识别方案  
+- [x]  支持树莓派实时识别方案  
  
 
 ## 环境部署
