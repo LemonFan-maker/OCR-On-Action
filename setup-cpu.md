@@ -34,7 +34,7 @@ pip install web.py==0.40.dev0 redis
 pip install keras==2.1.5 tensorflow==1.8
 ```
 
-**5.** 安装torch
+**5.** 安装pytorch
 
 ```sh
 #mac
@@ -44,3 +44,16 @@ conda install pytorch torchvision -c pytorch
 conda install pytorch-cpu torchvision-cpu -c pytorch
 ```
 
+**6.** 运行OCR服务
+```sh
+cd OCR-On-Acion
+python web.py 8081
+```
+
+**7.** 访问OCR
+**1.** 本机OCR
+  - 浏览器直接访问 *0.0.0.0:8081/ocr*
+**2.** 局域网OCR
+  - 浏览器直接访问 *本机IP:8081/ocr*[^1]
+
+[^1]: 这块我不太清楚，如果访问不了请进行内网穿透.
