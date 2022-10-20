@@ -1,20 +1,20 @@
-**提示：** 由于某些省份[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple)访问较慢，替换[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/pypi/web/simple)。
+## **提示：** 由于某些省份[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple)访问较慢，替换[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/pypi/web/simple)。
 
 ## 使用方法
 
-**1.** 安装[Anaconda](https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2019.10-Linux-x86_64.sh)
+**1.** 安装[Anaconda](https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2019.10-Linux-x86_64.sh),可直接单击进行下载
 
 **2.** 创建虚拟环境
 
 ```sh
-conda create -n chineseocr python=3.6 pip scipy
-source activate chineseocr
+conda create -n OCR python=3.6 pip scipy
+source activate OCR
 ```
 
 **3.** 编译darknet
 
 ```sh
-cd chineseocr
+cd OCR-On-Action
 rm -rf darknet
 git clone https://github.com/LemonFan-maker/Only-for-Action.git && mv Only-for-Action darknet
 ```
@@ -34,7 +34,7 @@ pip install web.py==0.40.dev0 redis
 pip install keras==2.1.5 tensorflow==1.8
 ```
 
-**5.** 安装torch
+**5.** 安装pytorch
 
 ```sh
 #mac
@@ -44,3 +44,18 @@ conda install pytorch torchvision -c pytorch
 conda install pytorch-cpu torchvision-cpu -c pytorch
 ```
 
+**6.** 运行OCR服务
+```sh
+cd OCR-On-Acion
+python web.py 8081
+```
+
+**7.** 访问OCR
+
+- 本机OCR
+  - 浏览器直接访问 *0.0.0.0:8081/ocr*
+
+- 局域网OCR
+  - 浏览器直接访问 *本机IP:8081/ocr*[^1]
+
+[^1]: 这块我不太清楚，如果访问不了请进行内网穿透.
