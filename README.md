@@ -27,11 +27,11 @@
 
 家用(即:树莓派,等设备)**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
   
-**注意1:** 准备时间长是正常现象。
+**注意1:** 准备时间长是正常现象.
    
 ~~**注意2:** *API*分支正在维护中~~
 
 ## 四、原理
-![OCR-On-Action](https://raw.githubusercontent.com/LemonFan-maker/OCR-On-Action/master/assets/OCR-On-Action.svg)
+![OCR-On-Action](./assets/OCR-On-Action.svg)
 
  [^1]: 具体限时请参考[GitHub帮助文档](https://docs.github.com/cn/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
