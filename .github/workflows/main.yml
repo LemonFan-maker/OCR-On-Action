@@ -1,4 +1,4 @@
-name: OCR Service
+name: OCR Service With API
 on:
   workflow_dispatch:
 jobs:
