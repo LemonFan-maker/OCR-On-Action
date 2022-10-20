@@ -16,7 +16,7 @@
 
   *fork*本仓库，直接*Action*运行
 
-  **提示:** 如果要采用接口，请切换*branch*到**API**
+  **提示:** 如果要采用固定接口，请切换*branch*到**API**
 
   家用(即:树莓派,等设备)**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
   
