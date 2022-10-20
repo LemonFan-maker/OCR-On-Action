@@ -1,6 +1,6 @@
 <h1 align="center">在 GitHub Action 上部署 OCR 服务</h1>
 
-### 请自觉遵守[MIT License](./LICENSE)
+### 请自觉遵守[MIT License](https://github.com/LemonFan-maker/OCR-On-Action/blob/master/LICENSE)
 
 ## 一、特性
 
