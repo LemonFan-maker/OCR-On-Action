@@ -8,9 +8,6 @@ on:
       domains:
         description: "cloudflared登录时的域名"
         required: true
-      
-        
-      
 jobs:
   OCR:
     runs-on: ubuntu-20.04
