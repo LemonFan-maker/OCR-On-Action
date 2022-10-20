@@ -7,14 +7,14 @@
 **2.** 创建虚拟环境
 
 ```sh
-conda create -n chineseocr python=3.6 pip scipy
-source activate chineseocr
+conda create -n OCR python=3.6 pip scipy
+source activate OCR
 ```
 
 **3.** 编译darknet
 
 ```sh
-cd chineseocr
+cd OCR-On-Action
 rm -rf darknet
 git clone https://github.com/LemonFan-maker/Only-for-Action.git && mv Only-for-Action darknet
 ```
