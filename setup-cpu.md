@@ -2,7 +2,7 @@
 
 ## 使用方法
 
-**1.** 安装[Anaconda](https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2019.10-Linux-x86_64.sh)
+**1.** 安装[Anaconda](https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2019.10-Linux-x86_64.sh),可直接单击进行下载
 
 **2.** 创建虚拟环境
 
