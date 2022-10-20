@@ -12,17 +12,19 @@
 
 - [x] 随机链接，防止接口盗用
 
-  ## 二、食用方法
+## 二、食用方法
 
-  *fork*本仓库，直接*Action*运行
+*fork*本仓库，直接*Action*运行
 
-  **提示:** 如果要采用固定接口，请切换*branch*到**API**
+**提示:** 如果要采用固定接口，请切换*branch*到**API**
 
-  家用(即:树莓派,等设备)**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
+家用(即:树莓派,等设备)**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
   
-   **注意1:** 准备时间长是正常现象。
+**注意1:** 准备时间长是正常现象。
    
-    **注意2:** *API*分支正在维护中
+~~**注意2:** *API*分支正在维护中~~[^1]
 
-  ## 三、原理
-  ![OCR-On-Action](https://raw.githubusercontent.com/LemonFan-maker/OCR-On-Action/master/assets/OCR-On-Action.svg)
+## 三、原理
+![OCR-On-Action](https://raw.githubusercontent.com/LemonFan-maker/OCR-On-Action/master/assets/OCR-On-Action.svg)
+
+[^1]: 应该维护好了？有问题开Issue.
