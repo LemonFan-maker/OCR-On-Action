@@ -2,7 +2,7 @@
 
 ## 一、特性
 
-- [x] <h3>参考chineseocr大佬的仓库，稍作修改，方便GitHub部署</h3>
+- [x] **参考chineseocr大佬的仓库，稍作修改，方便GitHub部署**
 
 - [x] 开箱即用
 
