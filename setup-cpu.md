@@ -1,8 +1,8 @@
-**提示：**由于某些省份[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple)访问较慢，替换[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/pypi/web/simple)。
+**提示：** 由于某些省份[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple)访问较慢，替换[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/pypi/web/simple)。
 
 ## 使用方法
 
-**1. **安装[Anaconda](https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2019.10-Linux-x86_64.sh)
+**1. ** 安装[Anaconda](https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2019.10-Linux-x86_64.sh)
 
 **2. ** 创建虚拟环境
 
@@ -25,7 +25,7 @@ git clone https://github.com/LemonFan-maker/Only-for-Action.git && mv Only-for-A
 make && cd ..
 ```
 
-**4. **安装依赖
+**4. ** 安装依赖
 
 ```sh
 pip install easydict opencv-contrib-python==4.0.0.21 Cython h5py==2.10.0 lmdb numpy==1.16 mahotas pandas requests bs4 matplotlib lxml -i https://mirrors.bfsu.edu.cn/pypi/web/simple
@@ -34,7 +34,7 @@ pip install web.py==0.40.dev0 redis
 pip install keras==2.1.5 tensorflow==1.8
 ```
 
-**5.**安装torch
+**5.** 安装torch
 
 ```sh
 #mac
