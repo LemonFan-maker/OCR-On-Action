@@ -6,49 +6,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
-      - name: "移动一些文件"
-        run: |
-          mkdir /home/runner/ocr
-          mkdir /home/runner/tunnel
-          mv * /home/runner/ocr
-      - name: "设置虚拟环境"
-        run: |
-          sudo rm -rf /usr/bin/conda
-          export PATH="/usr/share/miniconda/bin:$PATH"
-          conda create -n chineseocr python=3.6 pip scipy
-      - name: "编译Darknet"
-        run: |
-          export PATH="/usr/share/miniconda/bin:$PATH"
-          source activate chineseocr
-          cd /home/runner/ocr
-          git clone https://github.com/LemonFan-maker/Only-for-Action.git
-          mv Only-for-Action darknet
-          cd darknet && make && cd ..
-      - name: "安装依赖"
-        run: |
-          export PATH="/usr/share/miniconda/bin:$PATH"
-          source activate chineseocr
-          pip uninstall numpy -y
-          pip install easydict opencv-contrib-python==4.0.0.21 Cython h5py==2.10.0 lmdb numpy==1.16 mahotas pandas requests bs4 matplotlib lxml
-          pip install -U pillow
-          pip install web.py==0.40.dev0 redis
-          pip install keras==2.1.5 tensorflow==1.8
-          conda install pytorch-cpu torchvision-cpu -c pytorch
-      - name: "准备models"
-        run: |
-          cd /home/runner/ocr
-          wget https://github.com/LemonFan-maker/Download-Models/releases/download/model/models.zip
-          unzip models.zip -d .
-          rm -rf models.zip
       - name: "安装内网穿透服务"
         run: |
+          mkdir /home/runner/tunnel
           cd /home/runner/tunnel
           wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
           sudo dpkg -i cloudflared-linux-amd64.deb
       - name: "启动内网穿透"
         run: |
-          cd /home/runner/ocr
-          export PATH="/usr/share/miniconda/bin:$PATH"
-          source activate chineseocr
-          nohup python app.py 8081 &
-          cloudflared tunnel --url 0.0.0.0:8081/ocr
+          cloudflared tunnel login
