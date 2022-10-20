@@ -43,7 +43,7 @@ jobs:
       - name: "安装内网穿透服务"
         run: |
           cd /home/runner/tunnel
-          wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+          aria2c "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb"
           sudo dpkg -i cloudflared-linux-amd64.deb
       - name: "启动内网穿透"
         run: |
