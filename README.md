@@ -25,7 +25,7 @@
 ~~**注意2:** *API*分支正在维护中.~~[^2]
 
 ## 三、原理
-![OCR-On-Action](https://raw.githubusercontent.com/LemonFan-maker/OCR-On-Action/master/assets/OCR-On-Action.svg)
+![OCR-On-Action](./assets/OCR-On-Action.svg)
 
 [^1]: 测试的时候发现chineseocr大佬*setup-cpu.md*有亿点问题[^3]，影响开心地使用.本仓库友好修改了*setup-cpu.md*文件，老少皆可放心食用.有问题直接开Issue.[^4]
 [^2]: 应该维护好了？有问题开Issue.
