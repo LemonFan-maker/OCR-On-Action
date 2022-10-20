@@ -1,5 +1,7 @@
 <h1 align="center">在 GitHub Action 上部署 OCR 服务</h1>
 
+### 请自觉遵守[MIT License](./LICENSE)
+
 ## 一、特性
 
 - [x] **参考chineseocr大佬的仓库，稍作修改，方便GitHub部署**
