@@ -51,4 +51,4 @@ jobs:
           export PATH="/usr/share/miniconda/bin:$PATH"
           source activate chineseocr
           nohup python app.py 8081 &
-          cloudflared tunnel --url 0.0.0.0:8081
+          cloudflared tunnel --url 0.0.0.0:8081/ocr
