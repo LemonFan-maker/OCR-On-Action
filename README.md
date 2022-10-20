@@ -18,7 +18,7 @@
 
   **提示:** 如果要采用接口，请切换*branch*到**API**
 
-  家用**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
+  家用(即:树莓派,等设备)**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
   
    **注意1:** 准备时间长是正常现象。
    
