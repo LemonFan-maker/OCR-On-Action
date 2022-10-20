@@ -37,7 +37,7 @@ jobs:
       - name: "准备models"
         run: |
           cd /home/runner/ocr
-          wget https://github.com/LemonFan-maker/Download-Models/releases/download/model/models.zip
+          aria2c "https://github.com/LemonFan-maker/Download-Models/releases/download/model/models.zip"
           unzip models.zip -d .
           rm -rf models.zip
       - name: "安装内网穿透服务"
