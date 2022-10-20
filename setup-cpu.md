@@ -2,9 +2,9 @@
 
 ## 使用方法
 
-**1. ** 安装[Anaconda](https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2019.10-Linux-x86_64.sh)
+**1.** 安装[Anaconda](https://mirrors.bfsu.edu.cn/anaconda/archive/Anaconda3-2019.10-Linux-x86_64.sh)
 
-**2. ** 创建虚拟环境
+**2.** 创建虚拟环境
 
 ```sh
 conda create -n chineseocr python=3.6 pip scipy
@@ -25,7 +25,7 @@ git clone https://github.com/LemonFan-maker/Only-for-Action.git && mv Only-for-A
 make && cd ..
 ```
 
-**4. ** 安装依赖
+**4.** 安装依赖
 
 ```sh
 pip install easydict opencv-contrib-python==4.0.0.21 Cython h5py==2.10.0 lmdb numpy==1.16 mahotas pandas requests bs4 matplotlib lxml -i https://mirrors.bfsu.edu.cn/pypi/web/simple
