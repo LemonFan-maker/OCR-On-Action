@@ -23,7 +23,7 @@
   家用**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
 
   ## 三、原理
-  [OCR-On-Action](https://raw.githubusercontent.com/LemonFan-maker/OCR-On-Action/master/assets/OCR-On-Action.svg)
+  ![OCR-On-Action](https://raw.githubusercontent.com/LemonFan-maker/OCR-On-Action/master/assets/OCR-On-Action.svg)
 
   
 
