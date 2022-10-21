@@ -28,6 +28,7 @@
 
 ## 三、原理
 ![OCR-On-Action](./assets/OCR-On-Action.svg)
+![Cloudflared](https://developers.cloudflare.com/cloudflare-one/static/documentation/connections/connect-apps/handshake.jpg)
 
 [^1]: 测试的时候发现chineseocr大佬*setup-cpu.md*有亿点问题[^3]，影响开心地使用.本仓库友好修改了*setup-cpu.md*文件，老少皆可放心食用.有问题直接开Issue.[^4]
 [^2]: 应该维护好了？有问题开Issue.
