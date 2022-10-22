@@ -14,7 +14,15 @@
 
 - [x] 随机链接，防止接口盗用
 
-## 二、食用方法
+## 二、待改进
+
+- 公式转LaTeX
+
+- 手写
+
+- 表格OCR
+
+## 三、食用方法
 
 *fork*本仓库，直接*Action*运行
 
@@ -26,7 +34,8 @@
    
 ~~**注意2:** *API*分支正在维护中.~~[^2]
 
-## 三、原理
+
+## 四、原理
 ![OCR-On-Action](./assets/OCR-On-Action.svg)
 ![Cloudflared](./assets/cloudflared.png)
 
