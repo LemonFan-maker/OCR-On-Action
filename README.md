@@ -21,19 +21,19 @@
   - 能添加**CNAME**解析
 
 **2.** 亿点点修改**Action yaml**文件的能力
-- 能看到这个*Branch*，应该都没啥大问题
+- 能看到这个*branch*，应该都没啥大问题
 
 ## 三、食用方法
 
 *fork*本仓库，填写*Action*必要字段并运行
 
-家用(即:树莓派,等设备)**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
+家用(即:树莓派等设备)**CPU**部署请参考[setup-cpu.md](./setup-cpu.md)
   
 **注意1:** 准备时间长是正常现象.
-   
+
 **注意2:** 此分支已经维护完成
 
 ## 四、原理
 ![OCR-On-Action](./assets/OCR-On-Action.svg)
 
- [^1]: 具体限时请参考[GitHub帮助文档](https://docs.github.com/cn/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
+[^1]: 具体限时请参考[GitHub帮助文档](https://docs.github.com/cn/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
