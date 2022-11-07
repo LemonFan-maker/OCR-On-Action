@@ -37,9 +37,6 @@ pip install keras==2.1.5 tensorflow==1.8
 **5.** 安装pytorch
 
 ```sh
-#mac
-conda install pytorch torchvision -c pytorch
-
 #linux
 conda install pytorch-cpu torchvision-cpu -c pytorch
 ```
