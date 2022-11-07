@@ -22,7 +22,7 @@ jobs:
           source activate chineseocr
           cd /home/runner/ocr
           wget https://github.com/LemonFan-maker/Only-for-Action/releases/download/darknet/darknet.tgz
-          mkidr darknet
+          mkdir darknet
           cd darknet
           tar -xvf darknet.tgz
           cd ..
