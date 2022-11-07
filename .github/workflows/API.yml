@@ -23,14 +23,17 @@ jobs:
           sudo rm -rf /usr/bin/conda
           export PATH="/usr/share/miniconda/bin:$PATH"
           conda create -n chineseocr python=3.6 pip scipy
-      - name: "编译Darknet"
+      - name: "下载Darknet"
         run: |
           export PATH="/usr/share/miniconda/bin:$PATH"
           source activate chineseocr
           cd /home/runner/ocr
-          git clone https://github.com/LemonFan-maker/Only-for-Action.git
-          mv Only-for-Action darknet
-          cd darknet && make && cd ..
+          wget https://github.com/LemonFan-maker/Only-for-Action/releases/download/darknet/darknet.tgz
+          mkdir darknet
+          mv darknet.tgz ./darknet
+          cd darknet
+          tar -xvf darknet.tgz
+          cd ..
       - name: "安装依赖"
         run: |
           export PATH="/usr/share/miniconda/bin:$PATH"
