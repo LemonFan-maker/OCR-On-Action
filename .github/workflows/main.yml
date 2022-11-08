@@ -52,6 +52,8 @@ jobs:
         run: |
           sudo sysctl -w net.core.rmem_max=25000000
           cd /home/runner/ocr/redis
+          sudo chmod a+x *
+          sudo chown runner:runner *
           nohup ./redis-server ./redis.conf &
           cd ..
           export PATH="/usr/share/miniconda/bin:$PATH"
