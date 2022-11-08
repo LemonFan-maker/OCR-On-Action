@@ -7,7 +7,7 @@ Created on Sun Aug  4 23:30:48 2019
 """
 import redis
 from apphelper.image import PIL_to_base64,base64_to_PIL
-pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True)   # host是redis主机，需要redis服务端和客户端都起着 redis默认端口是6379
+pool = redis.ConnectionPool(host='127.0.0.1', port=12357, decode_responses=True)   # host是redis主机，需要redis服务端和客户端都起着 redis默认端口是6379
 conn = redis.Redis(connection_pool=pool)
 jobListTable = 'job_list_table'##job列表
 resSetTable = 'res_set_table'##识别结果列表
@@ -102,12 +102,3 @@ class redisDataBase:
     
     def del_dict(self,name,key):
         conn.hdel(name, key)
-        
-        
-    
-
-    
-    
-    
-    
- 

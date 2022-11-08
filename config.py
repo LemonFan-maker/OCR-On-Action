@@ -21,7 +21,7 @@ yoloData    = os.path.join(pwd,"models","text.data")
 ########################文字检测################################################
 
 ## GPU选择及启动GPU序号
-GPU = True##OCR 是否启用GPU
+GPU = False##OCR 是否启用GPU
 GPUID=0##调用GPU序号
 
 ##vgg文字方向检测模型
@@ -31,7 +31,7 @@ AngleModelPbtxt = os.path.join(pwd,"models","Angle-model.pbtxt")
 AngleModelFlag  = 'opencv'  ## opencv or tf
 
 ######################OCR模型###################################################
-ocr_redis = False##是否多任务执行OCR识别加速 如果多任务，则配置redis数据库，数据库账号参考apphelper/redisbase.py
+ocr_redis = True##是否多任务执行OCR识别加速 如果多任务，则配置redis数据库，数据库账号参考apphelper/redisbase.py
 ##是否启用LSTM crnn模型
 ##OCR模型是否调用LSTM层
 LSTMFLAG = True
