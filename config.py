@@ -21,7 +21,7 @@ yoloData    = os.path.join(pwd,"models","text.data")
 ########################文字检测################################################
 
 ## GPU选择及启动GPU序号
-GPU = False##OCR 是否启用GPU
+GPU = True##OCR 是否启用GPU
 GPUID=0##调用GPU序号
 
 ##vgg文字方向检测模型
