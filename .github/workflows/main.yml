@@ -51,11 +51,7 @@ jobs:
       - name: "启动内网穿透"
         run: |
           sudo sysctl -w net.core.rmem_max=25000000
-          cd /home/runner/ocr/redis
-          sudo chmod a+x *
-          sudo chown runner:runner *
-          nohup ./redis-server ./redis.conf &
-          cd ..
+          cd /home/runner/ocr
           export PATH="/usr/share/miniconda/bin:$PATH"
           source activate chineseocr
           nohup python app.py 8081 &
