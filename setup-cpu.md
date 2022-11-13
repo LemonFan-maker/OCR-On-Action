@@ -1,4 +1,4 @@
-## **提示：** 由于某些省份[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple)访问较慢，替换[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/pypi/web/simple)。
+## **提示：** 由于部分省份[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple)访问较慢，替换[北京外国语大学镜像站](https://mirrors.bfsu.edu.cn/pypi/web/simple)。
 
 ## 使用方法
 
