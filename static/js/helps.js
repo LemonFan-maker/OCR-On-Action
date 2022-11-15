@@ -2,7 +2,7 @@ function postImg(){
         //执行post请求，识别图片
         jQuery("#billmodeltable").remove();//清空界面识别结果
         imgJson["textAngle"] = document.getElementById("textAngle").checked;//是否自动进行文字方向检测
-        imgJson["textLine"]  = document.getElementById("textLine").checked;//是否只检测但行文字
+        imgJson["textLine"]  = document.getElementById("textLine").checked;//是否只检测单行文字
          if(imgJson['num']==0)
          {   loadingGif('loadingGif');
              imgJson['num']=1;//防止重复提交
