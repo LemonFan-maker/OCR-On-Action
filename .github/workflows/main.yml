@@ -48,9 +48,9 @@ jobs:
           cd /home/runner/tunnel
           aria2c "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb"
           sudo dpkg -i cloudflared-linux-amd64.deb
-      - name: "启动内网穿透"
+      - name: "启动OCR服务"
         run: |
-          sudo sysctl -w net.core.rmem_max=25000000
+          sudo sysctl -w net.core.rmem_max=2500000
           cd /home/runner/ocr
           export PATH="/usr/share/miniconda/bin:$PATH"
           source activate chineseocr
