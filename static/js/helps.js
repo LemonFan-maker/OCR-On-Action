@@ -146,7 +146,7 @@ function drawRbox(boxes,canvasId){
            
             var ctx = canvas.getContext("2d");
             ctx.strokeStyle = 'rgba(255,0,0,0.5)';
-            ctx.lineWidth = 5; 
+            ctx.lineWidth = 2; 
             ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.beginPath(); 
             for(var i=0;i<imgBoxes.length;i++){
