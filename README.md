@@ -2,6 +2,10 @@
 
 ### 请自觉遵守[MIT License](./LICENSE)
 
+## 零、歪比巴卜
+
+小型OCR服务(界面优化)参见[这里](https://github.com/LemonFan-maker/Plus-OCR-On-Action)
+
 ## 一、特性
 
 - [x] 废话没有，开箱即用
