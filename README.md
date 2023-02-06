@@ -2,6 +2,8 @@
 
 ### 请自觉遵守[MIT License](./LICENSE)
 
+大佬仓库: [https://github.com/chineseocr/chineseocr](https://github.com/chineseocr/chineseocr)
+
 ## 零、歪比巴卜
 
 小型OCR服务(界面优化)参见[这里](https://github.com/LemonFan-maker/Plus-OCR-On-Action)
